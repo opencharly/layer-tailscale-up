@@ -1,7 +1,7 @@
 version: 2026.232.0520
 tailscale-up:
     candy:
-        version: 2026.144.1443
+        version: 2026.243.0100
         description: |
             Deploy-time tailscale runtime wiring — start the daemon, set --operator + --hostname.
             Runtime-config sibling of the tailscale install candy, which it
@@ -16,7 +16,7 @@ tailscale-up:
             why the build-scope composition facts (CLI + daemon present) are
             verifiable independently of the conditional runtime operator wiring.
         require:
-            - '@github.com/opencharly/layer-tailscale:v2026.237.458'
+            - '@github.com/opencharly/layer-tailscale:v2026.240.0121'
         plan:
             - run: |
                 command=set -eu
