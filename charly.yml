@@ -1,4 +1,4 @@
-version: 2026.232.0520
+version: 2026.261.1747
 tailscale-up:
     candy:
         version: 2026.243.0100
@@ -279,7 +279,7 @@ tailscale-up-skill:
             break bootc consumers (with build-time errors from missing daemon
             socket) or require a target-aware conditional inside the shared candy
             — exactly the kind of `<name>-host` polymorphism that the project rulebook
-            "Init-system polymorphism" rule (`AGENTS.md` / `CLAUDE.md`) forbids.
+            "Init-system polymorphism" rule (`AGENTS.md`) forbids.
             
             `tailscale-up` is the runtime-config sibling: it depends on `tailscale`,
             self-gates on `systemctl is-active tailscaled`, and only fires when
